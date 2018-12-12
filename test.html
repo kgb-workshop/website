@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knowledge graph building workshop at ESWC 2019</title>
+</head>
+<body>
+<ul>
+    {% for person in people %}
+        <li>{{person.name}} ({{person.iri}})</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
