@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Event HTML Template</title>
+	<title>KGB Workshop</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -40,12 +40,12 @@
 			<!-- navbar header -->
 			<div class="navbar-header">
 				<!-- Logo -->
-				<div class="navbar-brand">
+				<!--<div class="navbar-brand">
 					<a class="logo" href="index.html">
-						<img class="logo-img" src="./img/logo.png" alt="logo">
-						<img class="logo-alt-img" src="./img/logo-alt.png" alt="logo">
+						<img class="logo-img" src="./img/rdf.png" alt="logo">
+						<img class="logo-alt-img" src="./img/rdf.png" alt="logo">
 					</a>
-				</div>
+				</div>-->
 				<!-- /Logo -->
 
 				<!-- Mobile toggle -->
@@ -59,11 +59,11 @@
 			<!-- Navigation -->
 			<nav id="nav">
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
+					<li><a href="#call">Call</a></li>
+					<li><a href="#program">Program</a></li>
 					<li><a href="#important-dates">Important dates</a></li>
-					<li><a href="#speakers">Speakers</a></li>
-					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="#organization">Organization</a></li>
+					<li><a href="#pc">Program Committee</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -76,7 +76,7 @@
 	<!-- Home -->
 	<div id="home">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background01.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-color:rgb(24, 29, 33);" data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
 
 		<!-- home wrapper -->
@@ -86,11 +86,11 @@
 				<!-- row -->
 				<div class="row">
 					<!-- home content -->
-					<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1>Knowledge Graph Building Workshop</h1>
-							<h4 class="lead">Co-located with ESWC 2019</h4>
-							<a href="#" class="main-btn">See Call for Papers</a>
+							<h4 class="lead">Co-located with the Extended Semantic Web Conference 2019</h4>
+							<a href="#call" class="main-btn">See Call for Papers</a>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -104,115 +104,126 @@
 	<!-- /Home -->
 
 	<!-- About -->
-	<div id="about" class="section">
+	<div id="call" class="section">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>About</span> <span style="color: #dd0a37;">Event</span></h3>
+					<h2 class="title"><span>KGB</span> <span style="color: #dd0a37;"> Call for Papers</span></h2>
 				</div>
 				<!-- /section title -->
 
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="col-md-10 col-md-offset-1 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-							dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>
+					More and more Knowledge Graphs are generated for private, e.g. Siri, Alexa, or public use, e.g. DBpedia, Wikidata. While techniques to automatically generate Knowledge Graph from existing Web objects exist (i.e., scraping Web tables), the majority need extensive resources. Those with limited resources typically generate Knowledge Graphs by transforming the content of their datasets (RDB, CSV, etc). Initially, generating Knowledge Graphs from existing datasets was considered an engineering task, however scientific methods recently emerged. Lately, <span style="color: #dd0a37;">mapping languages for describing rules to generate knowledge graphs and processors to execute those rules emerged</span>. Addressing the challenges related to Knowledge Graphs generation requires well-founded research, including the investigation of concepts and development of tools and methods for their evaluation. <span style="color: #dd0a37;">KGB is a full-day workshop on Knowledge Graph generation with a special focus on Mapping Languages</span>. The main goal is to provide a venue for scientific discourse, systematic analysis and rigorous evaluation of languages, techniques and tools, as well as practical and applied experiences and lessons-learnt for generating knowledge graphs from academia and industry. 
+						</p>
+						
 					</div>
+
+					<div class="section-title"  style="margin-top: 30pt !important; margin-bottom: 10pt !important;">
+						<h4 class="title" ><span>Topics</span></h4>
+					</div>
+					<div class="col-md-6">
+							<div class="list-group">
+							  <a class="list-group-item active">
+							    Mapping based Knowledge Graph Generation
+							  </a>
+							  <a class="list-group-item">Mapping languages for generating Knowledge Graph from legacy datasets</a>
+							  <a class="list-group-item">Approaches and techniques on (semi)automatically generate mappings</a>
+							  <a class="list-group-item">Approaches and techniques on collaborative mappings generation</a>
+							  <a class="list-group-item">Approaches and techniques on exploiting mappings for query answering</a>
+							</div>
+						
+					</div>
+					<div class="col-md-6">
+							<div class="list-group">
+							  <a class="list-group-item active">
+							    Methods and Techniques for Knowledge Graph Generation
+							  </a>
+							  <a class="list-group-item">(Sustainable) workflows for Web scale Knowledge Graph generation & publishing</a>
+							  <a class="list-group-item">Seamless (distributed) integration/interlinking from heterogeneous data sources</a>
+							  <a class="list-group-item">Dynamic discovery and retrieval of data for KG generation</a>
+							  <a class="list-group-item">Quality, Provenance, privacy and trustworthiness of Linked Data generation</a>
+							  <a class="list-group-item">Knowledge Graph generation and publishing of streaming data at run-time</a>
+							  <a class="list-group-item">Benchmarks for Knowledge Graphs generation and publishing</a>
+							</div>
+					</div>
+					<div class="col-md-6">
+							<div class="list-group">
+							  <a class="list-group-item active">
+							    Tools for Knowledge Graph Generation
+							  </a>
+							  <a class="list-group-item">End User Interfaces (UI) for (collaborative) editing and viewing for Knowledge Graphs building rules and management platforms in general</a>
+							  <a class="list-group-item">Architectures for Knowledge Graph generation systems</a>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+							<div class="list-group">
+							  <a class="list-group-item active">
+							    Lessons learnt, In Use and Experience
+							  </a>
+							  <a class="list-group-item">Experience, lessons learnt and best practices for generating and publishing</a>
+							  <a class="list-group-item">Negative results and in-use/applied descriptions</a>
+							</div>	
+					</div>
+
 					<!-- /about content -->
 
-					<!-- Numbers -->
-					<div id="numbers">
-						<!-- row -->
-						<div class="row">
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="900" data-speed="1500">0</span>+</h3>
-									<p>Hours</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="750" data-speed="1500">0</span>+</h3>
-									<p>Venues</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="50" data-speed="1500">0</span>+</h3>
-									<p>Country</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="20" data-speed="1500">0</span>+</h3>
-									<p>Speakers</p>
-								</div>
-							</div>
-							<!-- /number -->
-						</div>
-						<!-- /row -->
-					</div>
 					<!-- /Numbers -->
-				</div>
+
 			</div>
 			<!-- row -->
 		</div>
+	</div>
+		
 		<!-- /container -->
 	</div>
 	<!-- /About -->
 
 	<!-- Galery -->
-	<div id="galery">
+<!--	<div id="galery">
 		<!-- container -->
-		<div class="container">
+	<!--	<div class="container">
 			<!-- row -->
-			<div class="row">
+		<!--	<div class="row">
 				<!-- galery owl -->
-				<div id="galery-owl" class="owl-carousel owl-theme">
+			<!--	<div id="galery-owl" class="owl-carousel owl-theme">
 					<!-- galery item -->
-					<div class="galery-item">
+				<!--	<div class="galery-item">
 						<img src="./img/galery01.jpg" alt="">
 					</div>
 					<!-- /galery item -->
 
 					<!-- galery item -->
-					<div class="galery-item">
+					<!--<div class="galery-item">
 						<img src="./img/galery02.jpg" alt="">
 					</div>
 					<!-- /galery item -->
 
 					<!-- galery item -->
-					<div class="galery-item">
+				<!--	<div class="galery-item">
 						<img src="./img/galery03.jpg" alt="">
 					</div>
 					<!-- /galery item -->
 
-				</div>
+			<!--	</div>
 				<!-- /galery owl -->
-			</div>
+			<!--</div>
 			<!-- /row -->
-		</div>
+		<!--</div>
 		<!-- /container -->
-	</div>
+	<!--</div>
 	<!-- /Galery -->
 
 	<!-- Video CTA -->
-	<div id="video-cta" class="section">
+	<div id="program" class="section">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background02.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-color:rgb(247, 247, 247);" data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
 
 		<!-- container -->
@@ -221,13 +232,20 @@
 			<div class="row">
 				<!-- cta content -->
 				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<a class="video-play" href="#">
-							<i class="fa fa-play"></i>
-						</a>
-						<h2>Watch this video</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="text-center">
+						<h2 style="margin-bottom: 40pt">Program</h2>
 					</div>
+						<div class="event">
+							
+							<div class="event-content">
+								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
+								<h3 class="event-title">Keynote</h3>
+								<p>The invited keynote speaker for the first edition of the KGB workshops is
+								<span style="color: #dd0a37;"><a href="https://www.linkedin.com/in/marianorm">Mariano Rodriguez-Muro</a></span>, Ontologist in Google</p>
+								<!--<p>By <a href="#">John Doe</a></p>-->
+							</div>
+						</div>
+					
 				</div>
 				<!-- /cta content -->
 			</div>
@@ -256,14 +274,16 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">25</span>
-									<span class="year">Jan, 2019</span>
+									<span class="day">01</span>
+									<span class="year">March, 2019</span>
 								</div>
 							</div>
 							<div class="event-content">
 								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
 								<h3 class="event-title">Submission papers</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>Send your paper to KGB workshop about new and incredibles proposals on Knowledge Graph 
+								Generation. See the topics in the <a href="#call">Call for Papers</a></p>
+								
 								<!--<p>By <a href="#">John Doe</a></p>-->
 							</div>
 						</div>
@@ -273,14 +293,14 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">14</span>
-									<span class="year">Feb, 2019</span>
+									<span class="day">29</span>
+									<span class="year">March, 2019</span>
 								</div>
 							</div>
 							<div class="event-content">
 								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
 								<h3 class="event-title">Notifications</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>Accepted or not based on the reviews from our <a href="#pc">Program Committee</a></p>
 								<!--<p>By <a href="#">John Doe</a></p>-->
 							</div>
 						</div>
@@ -290,14 +310,14 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">28</span>
-									<span class="year">Feb, 2019</span>
+									<span class="day">04</span>
+									<span class="year">April, 2019</span>
 								</div>
 							</div>
 							<div class="event-content">
 								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
 								<h3 class="event-title">Camera ready</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>Time to have your paper ready for being published. All the accepted paper will be published in the KGB proceedings using CEUR.</p>
 								<!--<p>By <a href="#">John Doe</a></p>-->
 							</div>
 						</div>
@@ -307,14 +327,14 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">01</span>
+									<span class="day">03</span>
 									<span class="year">June, 2019</span>
 								</div>
 							</div>
 							<div class="event-content">
 								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
 								<h3 class="event-title">Workshop</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>Keynote, papers presentations and a lot of discussions.</p>
 								<!--<p>By <a href="#">John Doe</a></p>-->
 							</div>
 						</div>
@@ -334,33 +354,33 @@
 	<!-- /Event Schedule -->
 
 	<!-- Speakers -->
-	<div id="speakers" class="section">
+	<div id="organization" class="section" style="background-color:rgb(247, 247, 247);">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Speakers</span></h3>
+					<h3 class="title"><span style="color: black;">Organizers </span></h3>
 				</div>
 				<!-- section title -->
 
 				<!-- speaker -->
-				<div class="col-md-4 col-sm-6">
-					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
+				<div class="col-md-5 col-sm-5 col-md-offset-1">
+					<div class="speaker">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="./img/dchavesf.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa fa-linkedin"></i></a>
+								<!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+								<a href="https://twitter.com/dchavesf"><i class="fa fa-twitter"></i></a>
+								<!--<a href="#"><i class="fa fa-instagram"></i></a>-->
+								<a href="http://linkedin.com/in/david-chaves-fraga"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>David Chaves-Fraga</h2>
+								<span>PhD Student, OEG-UPM</span>
 							</div>
 						</div>
 					</div>
@@ -368,21 +388,19 @@
 				<!-- /speaker -->
 
 				<!-- speaker -->
-				<div class="col-md-4 col-sm-6">
-					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
+				<div class="col-md-5 col-sm-5">
+					<div class="speaker">
 						<div class="speaker-img">
-							<img src="./img/speaker02.jpg" alt="">
+							<img src="./img/anastasia.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa fa-linkedin"></i></a>
+								<a href="https://twitter.com/natadimou"><i class="fa fa-twitter"></i></a>
+								<a href="https://www.linkedin.com/in/anastasia-dimou-a501511b"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Anastasia Dimou</h2>
+								<span>Senior Researcher, imec - IDLab (Ghent University)</span>
 							</div>
 						</div>
 					</div>
@@ -390,81 +408,59 @@
 				<!-- /speaker -->
 
 				<!-- speaker -->
-				<div class="col-md-4 col-sm-6">
-					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
+				<div class="col-md-5 col-sm-5 col-md-offset-1">
+					<div class="speaker">
 						<div class="speaker-img">
-							<img src="./img/speaker03.jpg" alt="">
+							<img src="./img/pieter.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa fa-linkedin"></i></a>
+								<a href="https://twitter.com/PHaDventure"><i class="fa fa-twitter"></i></a>
+								<a href="https://be.linkedin.com/in/heyvaertpieter"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>John Doe</h2>
-								<span>Manager, CEO</span>
+								<h2>Pieter Heyvaert</h2>
+								<span>PhD Student, imec - IDLab (Ghent University)</span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- /speaker -->
-
-				<!-- speaker modal -->
-				<div id="speaker-modal-1" class="speaker-modal modal fade">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
-							<div class="modal-body">
-								<div class="row">
-									<div class="col-md-5">
-										<div class="speaker-modal-img">
-											<img src="./img/speaker-info.jpg" alt="">
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="speaker-modal-content">
-											<h2 class="speaker-name">John Doe</h2>
-											<span class="speaker-job">- Manager, CEO</span>
-
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-												irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-											<div class="speaker-website">
-												<h4>Website</h4>
-												<a href="#">www.johndoe.com</a>
-											</div>
-
-											<div class="speaker-social">
-												<h4>Social Profile</h4>
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-instagram"></i></a>
-												<a href="#"><i class="fa fa fa-linkedin"></i></a>
-											</div>
-
-											<div class="speaker-events">
-												<h4>Sessions</h4>
-												<div class="speaker-event">
-													<span><strong>Day 1 -</strong> February 20, 2018 8 : 00 AM - 11 : 00 AM</span>
-													<p>His id altera fabellas facilisis. Has eros assueverit cu</p>
-												</div>
-
-												<div class="speaker-event">
-													<span><strong>Day 2 -</strong> February 20, 2018 8 : 00 AM - 11 : 00 AM</span>
-													<p>At mucius deserunt delicatissimi eam, labitur detraxit ut sit</p>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div>
+				<div class="col-md-5 col-sm-5">
+					<div class="speaker">
+						<div class="speaker-img">
+							<img src="./img/freddy.jpg" alt="">
+						</div>
+						<div class="speaker-body">
+							<div class="speaker-social">
+								<a href="https://twitter.com/freddy_priyatna"><i class="fa fa-twitter"></i></a>
+								<a href="https://es.linkedin.com/in/freddy-priyatna-0195781"><i class="fa fa fa-linkedin"></i></a>
+							</div>
+							<div class="speaker-content">
+								<h2>Freddy Priyatna</h2>
+								<span>Senior Researcher, OEG-UPM</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /speaker modal -->
+
+				<div class="col-md-5 col-sm-5 col-md-offset-3" style="margin-left: 260pt !important">
+					<div class="speaker">
+						<div class="speaker-img">
+							<img src="./img/juan.jpg" alt="">
+						</div>
+						<div class="speaker-body">
+							<div class="speaker-social">
+								<a href="https://twitter.com/juansequeda"><i class="fa fa-twitter"></i></a>
+								<a href="https://www.linkedin.com/in/juansequeda"><i class="fa fa fa-linkedin"></i></a>
+							</div>
+							<div class="speaker-content">
+								<h2>Juan Sequeda</h2>
+								<span>Capsenta Labs</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- /row -->
 		</div>
@@ -473,79 +469,40 @@
 	<!-- /Speakers -->
 
 	<!-- Sponsors -->
-	<div id="sponsors" class="section">
+	<div id="pc" class="section">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
+					<h3 class="title"><span>Program</span> <span style="color: #dd0a37;">Commitee</span></h3>
 				</div>
 				<!-- /section title -->
 
 				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
+				<div class="col-md-6 col-sm-4 col-xs-6">
+					<ul class="list-group">
+					  <li class="list-group-item">Soren Auer, Technische Informationsbibliothek (TIB)</li>
+					  <li class="list-group-item">Oscar Corhco, Universidad Politécnica de Madrid</li>
+					  <li class="list-group-item">Emanuele Della Valle, Politecnico di Milano</li>
+					  <li class="list-group-item">Aidan Hogan, Universidad de Chile</li>
+					  <li class="list-group-item">Craig Knoblock, University of Southern California</li>
+					  <li class="list-group-item">Manolis Koubarakis, National & Kapodistrian University of Athens</li>
+					</ul>
 				</div>
-				<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
+				<div class="col-md-6 col-sm-4 col-xs-6">
+					<ul class="list-group">
+					  <li class="list-group-item">Frank Michael, Université Côte d'Azur, CNRS, Inria, I3S</li>
+					  <li class="list-group-item">Claus Stadler, Leipzig University</li>
+					  <li class="list-group-item">Ruben Verborgh, IDLab, Ghent University – imec</li>
+					  <li class="list-group-item">Boris Villazón-Terrazas, Arvato</li>
+					  <li class="list-group-item">Amrapali Zaveri, Maastricht University</li>
+					  <li class="list-group-item">Antoine Zimmermann, École des Mines de Saint-Étienne</li>
+					</ul>
 				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
+				
 				<!-- /sponsor -->
 
 			</div>
@@ -556,39 +513,16 @@
 	<!-- /Sponsors -->
 
 	<!-- CTA -->
-	<div id="cta" class="section">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background03.jpg)" data-stellar-background-ratio="0.5"></div>
-		<!-- /background image -->
-
-		<!-- container -->
-		<div class="container">
-			<!-- container -->
-			<div class="row">
-				<!-- cta content -->
-				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<h2>Get Ticket Now!</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="#" class="main-btn">Buy Ticket</a>
-					</div>
-				</div>
-				<!-- /cta content -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /CTA -->
+	
 
 	<!-- Contact -->
-	<div id="contact" class="section">
+	<div id="contact" class="section" style="padding-top: 30pt !important; background-color: rgb(247, 247, 247);">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
-				<div class="section-title">
+				<div class="section-title" style="margin-bottom: 30pt !important;">
 					<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Info</span></h3>
 				</div>
 				<!-- /section title -->
@@ -596,8 +530,7 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Address</h3>
-						<p>2635 Simons Hollow Road, NEW YORK</p>
+						<h3><a href="https://twitter.com/rml_io">Twitter</a></h3>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -605,8 +538,7 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Phone</h3>
-						<p>570-751-2415</p>
+						<h3><a href="">EasyChair</a></h3>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -614,8 +546,7 @@
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
-						<h3>Email</h3>
-						<a href="#">event@support.com</a>
+						<h3><a href="mailto:dchaves@fi.upm.es">Email</a></h3>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -626,7 +557,7 @@
 		<!-- /container -->
 
 		<!-- Map -->
-		<div id="map"></div>
+		<!--<div id="map"></div>-->
 		<!-- /Map -->
 	</div>
 	<!-- /Contact -->
@@ -638,17 +569,17 @@
 			<!-- row -->
 			<div class="row">
 
-				<!-- footer logo -->
+				<!-- footer logo 
 				<div class="col-md-4 col-md-push-4">
 					<div class="footer-brand">
 						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/logo.png" alt="logo">
+							<img class="logo-img" src="./img/rdf.png" alt="logo">
 						</a>
 					</div>
-				</div>
+				</div>-->
 				<!-- /footer logo -->
 
-				<!-- contact social -->
+				<!-- contact social 
 				<div class="col-md-4 col-md-push-4">
 					<div class="contact-social">
 						<a href="#"><i class="fa fa-facebook"></i></a>
@@ -658,11 +589,11 @@
 						<a href="#"><i class="fa fa-pinterest"></i></a>
 						<a href="#"><i class="fa fa fa-linkedin"></i></a>
 					</div>
-				</div>
+				</div>-->
 				<!-- /contact social -->
 
 				<!-- copyright -->
-				<div class="col-md-4 col-md-pull-8">
+				<div class="col-md-12">
 					<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
