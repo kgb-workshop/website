@@ -70,7 +70,7 @@ h4 {
 }
 
 a {
-  color: #0b0f28;
+  color: #dd0a37;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
@@ -78,7 +78,7 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
-  color: #dd0a37;
+  color: #0b0f28;
 }
 
 ul, ol {
@@ -87,11 +87,20 @@ ul, ol {
   /*list-style: none*/
 }
 
+.list-group {
+  margin-bottom: 30pt;
+}
+
+.list-group-item.active {
+  font-size: 15pt;
+}
+
 .list-group-item
 {
   overflow:hidden;  
   position: relative;
   display: block;
+  font-size: 13pt;
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #fff;
@@ -779,12 +788,16 @@ textarea.input {
   font-size: 14px;
 }
 
+.event .event-content p {
+  font-size: 17px;
+}
+
 .event .event-time i {
   color: #dd0a37;
 }
 
 .event .event-content a {
-  color: #dd0a37;
+  /*color: #dd0a37;*/
 }
 
 .download-btn {
@@ -884,8 +897,8 @@ textarea.input {
 }
 
 .contact-social {
-  text-align: right;
-  margin: 10px 0px;
+  /*text-align: right;*/
+  /*margin: 10px 0px;*/
 }
 
 .contact-social a {
@@ -1055,6 +1068,8 @@ textarea.input {
   display: flex;
   flex-direction: column;
 }
+
+
 
 /*=========================================================
 	RESPONSIVE
