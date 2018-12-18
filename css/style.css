@@ -84,7 +84,18 @@ a:hover, a:focus {
 ul, ol {
   margin: 0;
   padding: 0;
-  list-style: none
+  /*list-style: none*/
+}
+
+.list-group-item
+{
+  overflow:hidden;  
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 
 .main-btn {
@@ -410,6 +421,10 @@ textarea.input {
   color: #0b0f28;
 }
 
+.about-content p {
+   line-height: 2;
+}
+
 /*=========================================================
 	GALERY
 ===========================================================*/
@@ -678,6 +693,7 @@ textarea.input {
 .event+.event {
   margin-top: 60px;
 }
+
 
 .event:after {
   content: "";
@@ -1029,6 +1045,15 @@ textarea.input {
 
 .blog .blog-reply form .form-group {
   margin-bottom: 30px;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
 
 /*=========================================================
