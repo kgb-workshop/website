@@ -65,7 +65,7 @@
 					<li><a href="#important-dates">Important dates</a></li>
 					<li><a href="#organization">Organization</a></li>
 					<li><a href="#pc">Program Committee</a></li>
-					<li><a href="#contact">Web Generation</a></li>
+					<li><a href="#contact">Website Generation</a></li>
 				</ul>
 			</nav>
 			<!-- /Navigation -->
@@ -89,9 +89,9 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1>Knowledge Graph Building Workshop</h1>
-							<h4 class="lead">Co-located with the Extended Semantic Web Conference 2019</h4>
-							<h4 class="lead">Portorož, Slovenia - 3 June 2019</h4>
+							<h1>{{ workshop.title }}</h1>
+							<h4 class="lead">Co-located with the {{ workshop.mainEvent }}</h4>
+							<h4 class="lead">{{ workshop.location }} - {{ workshop.date }}</h4>
 							<a href="#call" class="main-btn">See Call for Papers</a>
 						</div>
 					</div>
@@ -117,69 +117,39 @@
 				</div>
 				<!-- /section title -->
 
-				<div class="col-md-10 col-md-offset-1 text-center">
+				<div class="col-md-10 col-md-offset-1 text-justify">
 					<!-- about content -->
 					<div class="about-content" style="font-size: 14pt">
 						<p>
-					More and more Knowledge Graphs are generated for private, e.g. Siri, Alexa, or public use, e.g. DBpedia, Wikidata. While techniques to automatically generate Knowledge Graph from existing Web objects exist (i.e., scraping Web tables), the majority need extensive resources. Those with limited resources typically generate Knowledge Graphs by transforming the content of their datasets (RDB, CSV, etc). Initially, generating Knowledge Graphs from existing datasets was considered an engineering task, however scientific methods recently emerged. Lately, <span style="color: #dd0a37;">mapping languages for describing rules to generate knowledge graphs and processors to execute those rules emerged</span>. Addressing the challenges related to Knowledge Graphs generation requires well-founded research, including the investigation of concepts and development of tools and methods for their evaluation. <span style="color: #dd0a37;">KGB is a full-day workshop on Knowledge Graph generation with a special focus on Mapping Languages. It is co-located with the <a href="https://2019.eswc-conferences.org/">Extended Semantic Web Conference 2019 (ESWC2019)</a></span>. The main goal is to provide a venue for scientific discourse, systematic analysis and rigorous evaluation of languages, techniques and tools, as well as practical and applied experiences and lessons-learnt for generating knowledge graphs from academia and industry. 
+					More and more Knowledge Graphs are generated for private, e.g. Siri, Alexa, or public use, e.g. DBpedia, Wikidata. While techniques to automatically generate Knowledge Graph from existing Web objects exist (i.e., scraping Web tables), the majority need extensive resources. Those with limited resources typically generate Knowledge Graphs by transforming the content of their datasets (RDB, CSV, etc). Initially, generating Knowledge Graphs from existing datasets was considered an engineering task, however scientific methods recently emerged. Lately, <span style="color: #dd0a37;">mapping languages for describing rules to generate knowledge graphs and processors to execute those rules emerged</span>. Addressing the challenges related to Knowledge Graphs generation requires well-founded research, including the investigation of concepts and development of tools and methods for their evaluation. <span style="color: #dd0a37;">KGB is a full-day workshop on Knowledge Graph generation with a special focus on Mapping Languages. It is co-located with the <a href="https://2019.eswc-conferences.org/">Extended Semantic Web Conference 2019 (ESWC2019)</a></span>. The main goal is to provide a venue for scientific discourse, systematic analysis and rigorous evaluation of languages, techniques and tools, as well as practical and applied experiences and lessons-learnt for generating knowledge graphs from academia and industry.
 						</p>
-						
+
 					</div>
 				</div>
 			</div>
 					<div class="row text-center">
-					<div class="section-title"  style="margin-top: 30pt !important; margin-bottom: 10pt !important;">
-						<h4 class="title" ><span>Topics</span></h4>
+						<div class="section-title"  style="margin-top: 30pt !important; margin-bottom: 10pt !important;">
+							<h4 class="title" ><span>Topics</span></h4>
+						</div>
+						<div>
+
+							{% for topic in topics %}
+							<div class="col-md-10 col-md-offset-1">
+								<ul class="list-group">
+									<li class="list-group-item active">
+										{{ topic.name }}
+									</li>
+
+									{% for subtopic in topic.subTopics %}
+									<li class="list-group-item">{{ subtopic }}</li>
+									{% endfor %}
+								</ul>
+
+							</div>
+							{% endfor %}
+
+						</div>
 					</div>
-					<div >
-					<div class="col-md-10 col-md-offset-1">
-							<ul class="list-group">
-							  <li class="list-group-item active">
-							    Mapping based Knowledge Graph Generation
-							  </li>
-							  <li class="list-group-item testheight">Mapping languages for generating Knowledge Graph from legacy datasets</li>
-							  <li class="list-group-item">Approaches and techniques on (semi)automatically generate mappings</li>
-							  <li class="list-group-item">Approaches and techniques on collaborative mappings generation</li>
-							  <li class="list-group-item">Approaches and techniques on Human in the Loop mappings generation</li>
-							  <li class="list-group-item">Approaches and techniques on exploiting mappings for query answering</li>
-							</ul>
-						
-					</div>
-					<div class="col-md-10 col-md-offset-1">
-							<ul class="list-group">
-							  <li class="list-group-item active">
-							    Methods and Techniques for Knowledge Graph Generation
-							  </li>
-							  <li class="list-group-item">(Sustainable) workflows for Web scale Knowledge Graph generation & publishing</li>
-							  <li class="list-group-item">Seamless (distributed) integration/interlinking from heterogeneous data sources</li>
-							  <li class="list-group-item">Dynamic discovery and retrieval of data for KG generation</li>
-							  <li class="list-group-item">Quality, Provenance, privacy and trustworthiness of KG generation</li>
-							  <li class="list-group-item">Knowledge Graph generation and publishing of streaming data at run-time</li>
-							  <li class="list-group-item">Benchmarks for Knowledge Graphs generation and publishing</li>
-							</ul>
-					</div>
-				
-					<div class="col-md-10 col-md-offset-1">
-							<ul class="list-group">
-							  <li class="list-group-item active">
-							    Tools for Knowledge Graph Generation
-							  </li>
-							  <li class="list-group-item">End User Interfaces (UI) for (collaborative) editing and viewing for Knowledge Graphs building rules and management platforms in general</li>
-							  <li class="list-group-item">Architectures for Knowledge Graph generation systems</li>
-						</ul>
-					</div>
-					
-					<div class="col-md-10 col-md-offset-1">
-							<ul class="list-group">
-							  <li class="list-group-item active">
-							    Lessons learnt, In Use and Experience
-							  </li>
-							  <li class="list-group-item">Experience, lessons learnt and best practices for generating and publishing</li>
-							  <li class="list-group-item">Negative results and in-use/applied descriptions</li>
-							</div>	
-					</div>
-				</div>
-					</div>	
 					<!-- /about content -->
 				<div class="row">
 					<!-- /Numbers -->
@@ -188,7 +158,7 @@
 					</div>
 					<div class="col-md-4 col-md-offset-2">
 						<h3 class="title"><span style="color: #dd0a37;">Format</span></h3>
-						<p style="font-size: 14pt"> 
+						<p style="font-size: 14pt">
 							Authors can choose the best way to express their work, such as HTML or PDF. However, a LNCS-like layout should be provided. If your contribution will be in HTML, you can find some available tools in the <a href="https://2019.eswc-conferences.org/html-submission-guide/">ESWC19 HTML guideline.</a>
 						</p>
 					</div>
@@ -200,23 +170,23 @@
 								<li>In Use and Experience papers (8-12 pages)</li>
 								<li>Position papers (6-8 pages)</li>
 								<li>Short research papers (4-6 pages)</li>
-								<li>System/demo papers (4-6 pages)</li>		
-							</ul>		
+								<li>System/demo papers (4-6 pages)</li>
+							</ul>
 					</div>
 				</div>
 				<div class="row" style="margin-top: 40pt;">
 					<div class="col-md-8 col-md-offset-2">
 						<h3 class="title"><span style="color: #dd0a37;">Review and Publication</span></h3>
-						<p style="font-size: 14pt"> 
+						<p style="font-size: 14pt">
 							Please, share your contribution before the deadline through the OpenReview (link available soon) platform. The accepted contributions will be published as <a href="http://ceur-ws.org/">CEUR-WS</a> proceedings and need to be presented by one of the authors at the workshop.
 						</p>
 					</div>
 				</div>
-						
+
 			<!-- row -->
-		
+
 	</div>
-		
+
 		<!-- /container -->
 	</div>
 	<!-- /About -->
@@ -304,74 +274,23 @@
 				<div class="col-md-8 col-md-offset-2">
 
 					<div class="events-wrapper">
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">01</span>
-									<span class="year">March, 2019</span>
+						{% for importantDate in importantdates %}
+							<div class="event">
+								<div class="event-day">
+									<div>
+										<span class="day">{{importantDate.date.day}}</span>
+										<span class="year">{{importantDate.date.monthYear}}</span>
+									</div>
 								</div>
-							</div>
-							<div class="event-content">
-								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
-								<h3 class="event-title">Submission papers</h3>
-								<p>Submit your paper to KGB workshop using the OpenReview platform. You can see the main topics of the Workshop in the <a href="#call">Call for Papers</a></p>
-								
-								<!--<p>By <a href="#">John Doe</a></p>-->
-							</div>
-						</div>
-						<!-- /event -->
+								<div class="event-content">
+									<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
+									<h3 class="event-title">{{importantDate.title}}</h3>
+									<p>{{importantDate.description}}</p>
 
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">29</span>
-									<span class="year">March, 2019</span>
+									<!--<p>By <a href="#">John Doe</a></p>-->
 								</div>
 							</div>
-							<div class="event-content">
-								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
-								<h3 class="event-title">Notifications</h3>
-								<p> The notification and reviews from our <a href="#pc">Program Committee</a> will be available. </p>
-								<!--<p>By <a href="#">John Doe</a></p>-->
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">12</span>
-									<span class="year">April, 2019</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
-								<h3 class="event-title">Camera ready</h3>
-								<p>Time to have your paper ready for being published. All the accepted paper will be published in the KGB proceedings using CEUR-WS.</p>
-								<!--<p>By <a href="#">John Doe</a></p>-->
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">03</span>
-									<span class="year">June, 2019</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
-								<h3 class="event-title">Workshop</h3>
-								<p>Keynote, papers presentations, demo jam and a lot of discussion. Remember! If your contribution is accepted, it needs to be presented by one of the authors at the workshop. </p>
-								<!--<p>By <a href="#">John Doe</a></p>-->
-							</div>
-						</div>
-						<!-- /event -->
+						{% endfor %}
 					</div>
 
 					<!--<div class="download-btn">-->
@@ -398,115 +317,38 @@
 				</div>
 				<!-- section title -->
 
-				<!-- speaker -->
+				{% for person in organizers %}
 				<div class="col-md-4 col-sm-5">
 					<div class="speaker" data-togglre="modal" data-target="">
 						<div class="speaker-img">
-							
-								<img src="./img/dchavesf.jpg" alt="">
-							
+
+							<img src="{{ person.image }}" alt="">
+
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
 								<!--<a href="#"><i class="fa fa-facebook"></i></a>-->
-								<a href="http://dchaves.oeg-upm.net"><i class="fa fa fa-home"></i></a>
-								<a href="mailto:dchaves@fi.upm.es"><i class="fa fa fa-envelope"></i></a>
-								<a href="https://twitter.com/dchavesf"><i class="fa fa-twitter"></i></a>
+								<a href="{{ person.website }}"><i class="fa fa fa-home"></i></a>
+								<a href="mailto:{{ person.email }}"><i class="fa fa fa-envelope"></i></a>
+								<a href="https://twitter.com/{{ person.twitter }}"><i class="fa fa-twitter"></i></a>
 								<!--<a href="#"><i class="fa fa-instagram"></i></a>-->
-								<a href="http://linkedin.com/in/david-chaves-fraga"><i class="fa fa fa-linkedin"></i></a>
+								<a href="{{ person.linkedin }}"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>David Chaves-Fraga</h2>
-								<span>PhD Student, OEG - UPM</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /speaker -->
+								<h2>{{ person.name }}</h2>
+								<span>
+									{% if person.role %}
+										{{ person.role }},
+									{% endif %}
 
-				<!-- speaker -->
-				<div class="col-md-4 col-sm-5">
-					<div class="speaker">
-						<div class="speaker-img">
-							<img src="./img/anastasia.jpg" alt="">
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-social">
-								<a href="http://rml.io/"><i class="fa fa fa-home"></i></a>
-								<a href="mailto:anastasia.dimou@ugent.be"><i class="fa fa fa-envelope"></i></a>
-								<a href="https://twitter.com/natadimou"><i class="fa fa-twitter"></i></a>
-								<a href="https://www.linkedin.com/in/anastasia-dimou-a501511b"><i class="fa fa fa-linkedin"></i></a>
-							</div>
-							<div class="speaker-content">
-								<h2>Anastasia Dimou</h2>
-								<span>Senior Researcher, imec - IDLab (Ghent U.)</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /speaker -->
+									{{ person.affiliation }}
 
-				<!-- speaker -->
-				<div class="col-md-4 col-sm-5">
-					<div class="speaker">
-						<div class="speaker-img">
-							<img src="./img/pieter.jpg" alt="">
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-social">
-								<a href="https://pieterheyvaert.com/research/"><i class="fa fa fa-home"></i></a>
-								<a href="mailto:pheyvaer.heyvaert@ugent.be"><i class="fa fa fa-envelope"></i></a>
-								<a href="https://twitter.com/PHaDventure"><i class="fa fa-twitter"></i></a>
-								<a href="https://be.linkedin.com/in/heyvaertpieter"><i class="fa fa fa-linkedin"></i></a>
-							</div>
-							<div class="speaker-content">
-								<h2>Pieter Heyvaert</h2>
-								<span>PhD Student, imec - IDLab (Ghent U.)</span>
+								</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /speaker -->
-				<div class="col-md-4 col-sm-5 col-md-offset-2">
-					<div class="speaker">
-						<div class="speaker-img">
-							<img src="./img/freddy.png" alt="">
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-social">
-								<a href="http://www.oeg-upm.net/index.php/es/phd/50-fpriyatna/index.html"><i class="fa fa fa-home"></i></a>
-								<a href="mailto:fpriyatna@fi.upm.es"><i class="fa fa fa-envelope"></i></a>
-								<a href="https://twitter.com/freddy_priyatna"><i class="fa fa-twitter"></i></a>
-								<a href="https://es.linkedin.com/in/freddy-priyatna-0195781"><i class="fa fa fa-linkedin"></i></a>
-							</div>
-							<div class="speaker-content">
-								<h2>Freddy Priyatna</h2>
-								<span>Senior Researcher, OEG - UPM</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-5">
-					<div class="speaker">
-						<div class="speaker-img">
-							<img src="./img/juan.jpg" alt="">
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-social">
-								<a href="http://www.juansequeda.com/"><i class="fa fa fa-home"></i></a>
-								<a href="mailto:juan@capsenta.com"><i class="fa fa fa-envelope"></i></a>
-								<a href="https://twitter.com/juansequeda"><i class="fa fa-twitter"></i></a>
-								<a href="https://www.linkedin.com/in/juansequeda"><i class="fa fa fa-linkedin"></i></a>
-							</div>
-							<div class="speaker-content">
-								<h2>Juan Sequeda</h2>
-								<span>Capsenta Labs</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			
+				{% endfor %}
 			</div>
 			<!-- /row -->
 		</div>
@@ -529,21 +371,12 @@
 				<!-- sponsor -->
 				<div class="col-md-8 col-sm-6 col-xs-8 col-md-offset-2 text-center" >
 					<ul class="list-group">
-					  <li class="list-group-item">Soren Auer, Technische Informationsbibliothek (TIB)</li>
-					  <li class="list-group-item">Oscar Corcho, Universidad Politécnica de Madrid</li>
-					  <li class="list-group-item">Emanuele Della Valle, Politecnico di Milano</li>
-					  <li class="list-group-item">Aidan Hogan, Universidad de Chile</li>
-					  <li class="list-group-item">Craig Knoblock, University of Southern California</li>
-					  <li class="list-group-item">Manolis Koubarakis, National & Kapodistrian University of Athens</li>
-					  <li class="list-group-item">Frank Michael, Université Côte d'Azur, CNRS, Inria, I3S</li>
-					  <li class="list-group-item">Claus Stadler, Leipzig University</li>
-					  <li class="list-group-item">Ruben Verborgh, IDLab, Ghent University – imec</li>
-					  <li class="list-group-item">Boris Villazón-Terrazas, Arvato</li>
-					  <li class="list-group-item">Amrapali Zaveri, Maastricht University</li>
-					  <li class="list-group-item">Antoine Zimmermann, École des Mines de Saint-Étienne</li>
+						{% for person in programcommittee %}
+						<li class="list-group-item">{{person.name}}, {{person.affiliation}}</li>
+						{% endfor %}
 					</ul>
 				</div>
-				
+
 				<!-- /sponsor -->
 
 			</div>
@@ -554,7 +387,7 @@
 	<!-- /Sponsors -->
 
 	<!-- CTA -->
-	
+
 
 	<!-- Contact -->
 	<div id="contact" class="section" style="padding: 30pt !important; background-color: rgb(247, 247, 247);">
@@ -565,33 +398,33 @@
 				<!-- section title -->
 				<div class="section-title" style="margin-bottom: 30pt !important;">
 					<h3 class="title"><span>How we</span> built the <span style="color: #dd0a37;">KGB Web Page</span></h3>
-					<h3>Eating our own dog food</h3>	
+					<h3>Eating our own dog food</h3>
 				</div>
 
-				
-					
-					
+
+
+
 					<div class="col-md-6">
 						<h3 class="title"><span style="color: #dd0a37;">Tools</span></h3>
-						<p style="font-size: 14pt"> 
-							Many of the information showed in this Web Page come from the <a href="https://raw.githubusercontent.com/kgb-workshop/data/master/workshop-data.ttl">KGB2019 RDF Graph</a>. For generating
+						<p style="font-size: 14pt">
+							Most of the information showed on this website comes from the <a href="https://raw.githubusercontent.com/kgb-workshop/data/master/workshop-data.ttl">KGB2019 RDF Graph</a>. For generating
 							it, we use the <a href="http://rml.io/">RML suite</a> (<a href="https://github.com/RMLio/yarrrml-parser">YARRRML parser</a> and <a href="https://github.com/RMLio/rmlmapper-java">RML-Mapper</a>) and for querying it, we use the <a href="http://comunica.linkeddatafragments.org/">Comunica Framework</a>.
 						</p>
 					</div>
 
 					<div class="col-md-6">
 						<h3 class="title"><span style="color: #dd0a37;">Mappings and CSVs</span></h3>
-						<p style="font-size: 14pt"> 
+						<p style="font-size: 14pt">
 						Using the <a href="http://rml.io/yarrrml/">YARRRML specification</a>, we generate a <a href="https://raw.githubusercontent.com/kgb-workshop/data/master/mapping.yml">mapping</a> for building the RDF from the <a href="https://github.com/kgb-workshop/data/tree/master/csv">source CSVs</a>. Check the <a href="https://github.com/kgb-workshop/data">full workflow</a> and see how easy is to generate a Knowledge Graph using mapping languages!
-						</p>		
+						</p>
 					</div>
 				</div>
 
-				
+
 
 				<!-- /section title -->
 
-				<!-- contact 
+				<!-- contact
 				<div class="col-sm-6">
 					<div class="contact">
 						<h3><a href="https://twitter.com/rml_io">Twitter</a></h3>
@@ -599,7 +432,7 @@
 				</div>-->
 				<!-- /contact -->
 
-				<!-- contact 
+				<!-- contact
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3><a href="">EasyChair</a></h3>
@@ -607,7 +440,7 @@
 				</div>-->
 				<!-- /contact -->
 
-				<!-- contact 
+				<!-- contact
 				<div class="col-sm-6">
 					<div class="contact">
 						<h3><a href="mailto:dchaves@fi.upm.es">Email</a></h3>
@@ -639,7 +472,7 @@
 			<!-- row -->
 			<div class="row">
 
-				<!-- footer logo 
+				<!-- footer logo
 				<div class="col-md-4 col-md-push-4">
 					<div class="footer-brand">
 						<a class="logo" href="index.html">
@@ -649,7 +482,7 @@
 				</div>-->
 				<!-- /footer logo -->
 
-				
+
 				<div class="col-md-2">
 					<div class="contact-social">
 						<a href="http://twitter.com/kgbw_2019"><i class="fa fa-twitter"></i></a>
