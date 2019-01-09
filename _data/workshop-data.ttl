@@ -37,39 +37,51 @@
 <https://kgb-workshop.org/resources/Topic/lessons-learnt-in-use-and-experience> <http://schema.org/keyword> "Experience, lessons learnt and best practices for generating and publishing".
 <https://kgb-workshop.org/resources/Topic/lessons-learnt-in-use-and-experience> <http://schema.org/keyword> "Negative results and in-use/applied descriptions".
 <https://kgb-workshop.org/resources/ProgramCommittee/soren-auer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/soren-auer> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/soren-auer> <http://schema.org/name> "Soren Auer".
 <https://kgb-workshop.org/resources/ProgramCommittee/soren-auer> <http://schema.org/memberOf> "Technische Informationsbibliothek".
 <https://kgb-workshop.org/resources/ProgramCommittee/oscar-corcho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/oscar-corcho> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/oscar-corcho> <http://schema.org/name> "Oscar Corcho".
 <https://kgb-workshop.org/resources/ProgramCommittee/oscar-corcho> <http://schema.org/memberOf> "Universidad Politécnica de Madrid".
 <https://kgb-workshop.org/resources/ProgramCommittee/emanuele-della-valle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/emanuele-della-valle> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/emanuele-della-valle> <http://schema.org/name> "Emanuele Della Valle".
 <https://kgb-workshop.org/resources/ProgramCommittee/emanuele-della-valle> <http://schema.org/memberOf> "Politecnico di Milano".
 <https://kgb-workshop.org/resources/ProgramCommittee/aidan-hogan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/aidan-hogan> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/aidan-hogan> <http://schema.org/name> "Aidan Hogan".
 <https://kgb-workshop.org/resources/ProgramCommittee/aidan-hogan> <http://schema.org/memberOf> "Universidad de Chile".
 <https://kgb-workshop.org/resources/ProgramCommittee/craig-knoblock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/craig-knoblock> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/craig-knoblock> <http://schema.org/name> "Craig Knoblock".
 <https://kgb-workshop.org/resources/ProgramCommittee/craig-knoblock> <http://schema.org/memberOf> "University of Southern California".
 <https://kgb-workshop.org/resources/ProgramCommittee/manolis-koubarakis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/manolis-koubarakis> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/manolis-koubarakis> <http://schema.org/name> "Manolis Koubarakis".
 <https://kgb-workshop.org/resources/ProgramCommittee/manolis-koubarakis> <http://schema.org/memberOf> "National & Kapodistrian University of Athens".
 <https://kgb-workshop.org/resources/ProgramCommittee/frank-michael> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/frank-michael> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/frank-michael> <http://schema.org/name> "Frank Michael".
 <https://kgb-workshop.org/resources/ProgramCommittee/frank-michael> <http://schema.org/memberOf> "Université Côte d'Azur, CNRS, Inria, I3S ".
 <https://kgb-workshop.org/resources/ProgramCommittee/claus-stadler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/claus-stadler> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/claus-stadler> <http://schema.org/name> "Claus Stadler".
 <https://kgb-workshop.org/resources/ProgramCommittee/claus-stadler> <http://schema.org/memberOf> "Leipzig University".
 <https://kgb-workshop.org/resources/ProgramCommittee/ruben-verborgh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/ruben-verborgh> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/ruben-verborgh> <http://schema.org/name> "Ruben Verborgh".
 <https://kgb-workshop.org/resources/ProgramCommittee/ruben-verborgh> <http://schema.org/memberOf> "IDLab, Ghent University – imec".
 <https://kgb-workshop.org/resources/ProgramCommittee/boris-villaz%C3%B3n-terrazas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/boris-villaz%C3%B3n-terrazas> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/boris-villaz%C3%B3n-terrazas> <http://schema.org/name> "Boris Villazón-Terrazas".
 <https://kgb-workshop.org/resources/ProgramCommittee/boris-villaz%C3%B3n-terrazas> <http://schema.org/memberOf> "Arvato".
 <https://kgb-workshop.org/resources/ProgramCommittee/amrapali-zaveri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/amrapali-zaveri> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/amrapali-zaveri> <http://schema.org/name> "Amrapali Zaveri".
 <https://kgb-workshop.org/resources/ProgramCommittee/amrapali-zaveri> <http://schema.org/memberOf> "Maastricht University".
 <https://kgb-workshop.org/resources/ProgramCommittee/antoine-zimmermann> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
+<https://kgb-workshop.org/resources/ProgramCommittee/antoine-zimmermann> <http://schema.org/performerIn> <http://kgb.rml.io/resources/Event/kgb2019>.
 <https://kgb-workshop.org/resources/ProgramCommittee/antoine-zimmermann> <http://schema.org/name> "Antoine Zimmermann".
 <https://kgb-workshop.org/resources/ProgramCommittee/antoine-zimmermann> <http://schema.org/memberOf> "École des Mines de Saint-Étienne".
 <https://kgb-workshop.org/resources/ImportantDates/2019-03-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Event>.
@@ -92,7 +104,7 @@
 <https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://schema.org/name> "David Chaves Fraga".
 <https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://schema.org/sameAs> "http://dchaves.oeg-upm.net".
 <https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://open.vocab.org/terms/twitter-id> "dchavesf".
-<https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://schema.org/memberOf> "Ontology Engineering Group - Universidad Politécnica de Madrid".
+<https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://schema.org/memberOf> "OEG - UPM".
 <https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://schema.org/image> "http://kgb-workshop.org/img/dchavesf.jpg".
 <https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://schema.org/description> "PhD student at Ontology Engineering Group, Universidad Politécnica de Madrid. His research is focused on virtual Knowledge Graphs generation from heterogeneous data sources exposed on the Web using mapping languages. ".
 <https://kgb-workshop.org/resources/Organizer/david-chaves-fraga> <http://schema.org/email> "dchaves@fi.upm.es".
@@ -102,7 +114,7 @@
 <https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://schema.org/name> "Anastasia Dimou".
 <https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://schema.org/sameAs> "http://rml.io/".
 <https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://open.vocab.org/terms/twitter-id> "natadimou".
-<https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://schema.org/memberOf> "imec and IDLab, Ghent University".
+<https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://schema.org/memberOf> "imec - IDLab (UGent)".
 <https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://schema.org/image> "http://kgb-workshop.org/img/anastasia.jpg".
 <https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://schema.org/description> "Senior/post-doctoral researcher at imec and IDLab, Ghent University. Her research interests include Linked Data Generation and Publication, Data Quality and Integration, Knowledge Representation and Management.".
 <https://kgb-workshop.org/resources/Organizer/anastasia-dimou> <http://schema.org/email> "anastasia.dimou@ugent.be".
@@ -112,7 +124,7 @@
 <https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://schema.org/name> "Pieter Heyvaert".
 <https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://schema.org/sameAs> "https://pieterheyvaert.com/research/".
 <https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://open.vocab.org/terms/twitter-id> "PHaDventure".
-<https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://schema.org/memberOf> "imec and IDLab, Ghent University".
+<https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://schema.org/memberOf> "imec - IDLab (UGent)".
 <https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://schema.org/image> "http://kgb-workshop.org/img/pieter.jpg".
 <https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://schema.org/description> "PhD student at imec and IDLab, Ghent University. His research interests include Knowledge Graph and Linked Data Generation, and interaction between users and mapping languages.".
 <https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://schema.org/email> "pheyvaer.heyvaert@ugent.be".
@@ -120,9 +132,9 @@
 <https://kgb-workshop.org/resources/Organizer/pieter-heyvaert> <http://example.org/linkedin> "https://be.linkedin.com/in/heyvaertpieter".
 <https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
 <https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/name> "Freddy Priyatna".
-<https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/sameAs> "https://es.linkedin.com/in/freddy-priyatna-0195781".
+<https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/sameAs> "http://www.oeg-upm.net/index.php/es/phd/50-fpriyatna/index.html".
 <https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://open.vocab.org/terms/twitter-id> "freddy_priyatna".
-<https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/memberOf> "Ontology Engineering Group - Universidad Politécnica de Madrid".
+<https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/memberOf> "OEG - UPM".
 <https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/image> "http://kgb-workshop.org/img/freddy.jpg".
 <https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/description> "Senior/post-doctoral researcher at Ontology Engineering Group, Universidad Politécnica de Madrid. His main research interest is on the generation of Knowledge Graph from legacy datasets.".
 <https://kgb-workshop.org/resources/Organizer/freddy-priyatna> <http://schema.org/email> "fpriyatna@fi.upm.es".
