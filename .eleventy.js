@@ -7,7 +7,8 @@ module.exports = function(eleventyConfig) {
       "liquid",
       "json",
       "ico", // for favicon
-      "css" // css is not yet a valid template extension
+      "css", // css is not yet a valid template extension
+      "otf", "eot", "svg", "ttf", "woff", "woff2" // extensions used by the fonts
     ],
     passthroughFileCopy: true,
     dir: {
