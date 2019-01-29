@@ -1,4 +1,5 @@
 const newEngine = require('@comunica/actor-init-sparql-rdfjs').newEngine;
+const graphQLEngine = require('')
 const N3 = require('n3');
 const Q = require('q');
 const fs = require('fs');
