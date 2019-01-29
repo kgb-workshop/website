@@ -1,6 +1,0 @@
-<http://example.com/A> a <http://example.com/Test>;
-  <http://example.com/name> "User A".
-
-<http://example.com/B> a <http://example.com/Test>;
-  <http://example.com/name> "User B".
-

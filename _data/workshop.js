@@ -3,35 +3,45 @@ const N3 = require('n3');
 const Q = require('q');
 const fs = require('fs');
 
-module.exports = async () => {
- const people = await getPeople('./_data/people.ttl');
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 
- return people;
+module.exports = async () => {
+ const result = await getWorkhopDetails('./_data/workshop-data.ttl');
+
+ return result;
 };
 
-async function getPeople(path) {
+async function getWorkhopDetails(path) {
   const deferred = Q.defer();
   const rdfjsSource = await getRDFjsSourceFromFile(path);
   const engine = newEngine();
-  const people = [];
 
   engine.query(`SELECT * {
-     ?s a ?class;
-        <http://example.com/name> ?name.
+     ?s a <http://schema.org/Event>;
+        <http://schema.org/name> ?title;
+        <http://schema.org/location> ?loc;
+        <http://schema.org/superEvent> ?mainEvent;
+        <http://schema.org/startDate> ?date.
   }`,
     {sources: [{type: 'rdfjsSource', value: rdfjsSource}]})
     .then(function (result) {
       result.bindingsStream.on('data', async function (data) {
         data = data.toObject();
 
-        people.push({
-          iri: data['?s'].value,
-          name: data['?name'].value
+        const date = new Date(data['?date'].value);
+
+        deferred.resolve({
+          title: data['?title'].value,
+          date: `${date.getDate()} ${monthNames[date.getMonth()]} ${date.getFullYear()}`,
+          location: data['?loc'].value,
+          mainEvent: data['?mainEvent'].value,
         });
       });
 
       result.bindingsStream.on('end', function () {
-        deferred.resolve(people);
+
       });
     });
 
