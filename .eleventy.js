@@ -9,7 +9,10 @@ module.exports = function(eleventyConfig) {
       "ico", // for favicon
       "css" // css is not yet a valid template extension
     ],
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    dir: {
+      output: "docs"
+    }
   };
 
   return result;
