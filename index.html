@@ -337,7 +337,7 @@
 						<div class="speaker-content">
 							<h2>{{ person.name }}</h2>
 							<span>
-									{% if person.role %}
+									{% if person.role != "" %}
 										{{ person.role }},
 									{% endif %}
 

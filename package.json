@@ -15,5 +15,8 @@
     "@comunica/packager": "^1.5.3",
     "q": "^1.5.1",
     "streamify-array": "^1.0.1"
+  },
+  "devDependencies": {
+    "graphql-to-sparql": "^1.5.0"
   }
 }
