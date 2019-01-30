@@ -8,7 +8,7 @@ module.exports = async () => {
     "affiliation": { "@id": "http://schema.org/memberOf", "@singular": true },
     "event": { "@id": "http://schema.org/performerIn", "@singular": true },
     "Person": "http://schema.org/Person",
-    "workshop": "http://kgb.rml.io/resources/Event/kgb2019"
+    "workshop": "https://kgb-workshop.org/resources/Event/kgb2019"
   }, `{ ... on Person {name affiliation event(_:workshop)} }`, result => {
     result.sort( (a, b) => {
       if (a.name > b.name) {
