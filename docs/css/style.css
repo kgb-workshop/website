@@ -83,7 +83,8 @@ a:hover, a:focus {
 
 ul, ol {
   margin: 0;
-  padding: 0;
+  padding-left: 30px;
+  padding-bottom: 20px;
   /*list-style: none*/
 }
 
@@ -97,7 +98,7 @@ ul, ol {
 
 .list-group-item
 {
-  overflow:hidden;  
+  overflow:hidden;
   position: relative;
   display: block;
   font-size: 13pt;
