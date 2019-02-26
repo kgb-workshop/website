@@ -1,35 +1,30 @@
-const GraphQLExecutor = require('../graphqlexecutor');
+const {query} = require('graphqlld-on-file');
 
 module.exports = async () => {
- const executor = new GraphQLExecutor();
- const result = await executor.query('./_data/workshop-data.ttl',{
+ let result = await query('./_data/workshop-data.ttl',{
    "name": { "@id": "http://schema.org/name", "@singular": true },
    "keyword": { "@id": "http://schema.org/keyword", "@singular": true},
    "CreativeWork": "http://schema.org/CreativeWork"
- },`{... on CreativeWork {name keyword}}`, result => {
-   const topics = {};
+ },`{... on CreativeWork {name keyword}}`);
 
-   result.forEach(r => {
-     const {name, keyword} = r;
+  const topics = {};
 
-     if (!topics[name]) {
-       topics[name] = [];
-     }
+  result.forEach(r => {
+    const {name, keyword} = r;
 
-     topics[name].push(keyword);
-   });
+    if (!topics[name]) {
+      topics[name] = [];
+    }
 
-   result = [];
-   const mainTopics = Object.keys(topics);
+    topics[name].push(keyword);
+  });
 
-   for (let m of mainTopics) {
-     result.push({name: m, subTopics: topics[m]});
-   }
+  result = [];
+  const mainTopics = Object.keys(topics);
 
-   return result;
- });
-
- //console.log(result);
+  for (let m of mainTopics) {
+    result.push({name: m, subTopics: topics[m]});
+  }
 
  return result;
 };
