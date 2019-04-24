@@ -315,6 +315,25 @@
 						<!--<p>By <a href="#">John Doe</a></p>-->
 					</div>
 				</div>
+
+				<div class="event">
+					<div class="event-content">
+						<!--<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>-->
+						<h3 class="event-title">Accepted papers</h3>
+
+						<ul>
+							{% for paper in acceptedpapers %}
+							<li>
+								<a href="{{paper.review}}">{{paper.name}}</a> ({{paper.paperType}}) -
+								{% for author in paper.authors %}
+									{{author}}{% if forloop.last == false %},{% endif %}
+								{% endfor %}
+							</li>
+							{% endfor %}
+						</ul>
+						<!--<p>By <a href="#">John Doe</a></p>-->
+					</div>
+				</div>
 			</div>
 			<!-- /cta content -->
 		</div>
