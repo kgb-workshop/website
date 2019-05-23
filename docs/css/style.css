@@ -81,6 +81,15 @@ a:hover, a:focus {
   color: #0b0f28;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
+.schedule-break {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
 ul, ol {
   margin: 0;
   padding-left: 30px;
