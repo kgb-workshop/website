@@ -240,11 +240,11 @@
 <https://kgb-workshop.org/resources/Author/jens-wissmann> <http://schema.org/author> <https://kgb-workshop.org/resources/Article/3>.
 <https://kgb-workshop.org/resources/Author/elias-karle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
 <https://kgb-workshop.org/resources/Author/elias-karle> <http://schema.org/name> "Elias Kärle".
-<https://kgb-workshop.org/resources/Author/elias-karle> <https://kgb-workshop.org/authorOrder> "1".
+<https://kgb-workshop.org/resources/Author/elias-karle> <https://kgb-workshop.org/authorOrder> "2".
 <https://kgb-workshop.org/resources/Author/elias-karle> <http://schema.org/author> <https://kgb-workshop.org/resources/Article/4>.
 <https://kgb-workshop.org/resources/Author/umutcan-simsek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
 <https://kgb-workshop.org/resources/Author/umutcan-simsek> <http://schema.org/name> "Umutcan Şimşek".
-<https://kgb-workshop.org/resources/Author/umutcan-simsek> <https://kgb-workshop.org/authorOrder> "2".
+<https://kgb-workshop.org/resources/Author/umutcan-simsek> <https://kgb-workshop.org/authorOrder> "1".
 <https://kgb-workshop.org/resources/Author/umutcan-simsek> <http://schema.org/author> <https://kgb-workshop.org/resources/Article/4>.
 <https://kgb-workshop.org/resources/Author/dieter-fensel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person>.
 <https://kgb-workshop.org/resources/Author/dieter-fensel> <http://schema.org/name> "Dieter Fensel".
