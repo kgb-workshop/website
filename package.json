@@ -12,7 +12,7 @@
     "@11ty/eleventy": "^0.6.0",
     "@comunica/actor-init-sparql-rdfjs": "^1.4.6",
     "@comunica/actor-sparql-serialize-tree": "^1.4.4",
-    "@comunica/packager": "^1.5.3",
+    "@comunica/packager": "^1.22.3",
     "graphqlld-on-file": "0.0.2",
     "q": "^1.5.1",
     "streamify-array": "^1.0.1"
